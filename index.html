@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howard’s Small Engine Repair | Boyne City, MI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primaryPurple: '#7c3aed',
+                        deepPurple: '#5b21b6',
+                        brightPurple: '#8b5cf6',
+                        lightBg: '#f8fafc',
+                        cardBg: '#ffffff',
+                        cardHover: '#f1f5f9',
+                        borderSubtle: '#e2e8f0',
+                        textDark: '#0f172a',
+                        textMuted: '#475569'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Barlow Condensed', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #0f172a;
+        }
+        h1, h2, h3, h4, .font-display {
+            font-family: 'Barlow Condensed', sans-serif;
+            letter-spacing: 0.05em;
+        }
+        .glow-purple {
+            box-shadow: 0 10px 30px -5px rgba(124, 58, 237, 0.25);
+        }
+        .purple-gradient-bg {
+            background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+        }
+    </style>
+</head>
+<body class="bg-[#f8fafc] text-slate-900 antialiased selection:bg-purple-600 selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-purple-600 flex items-center justify-center shadow-md">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <span class="font-display font-extrabold text-xl tracking-wider block text-slate-900">HOWARD’S</span>
+                    <span class="text-xs text-purple-700 font-bold tracking-widest block uppercase">Small Engine Repair</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-600">
+                <a href="#services" class="hover:text-purple-600 transition">Services</a>
+                <a href="#why-howards" class="hover:text-purple-600 transition">Why Howard’s</a>
+                <a href="#how-it-works" class="hover:text-purple-600 transition">How It Works</a>
+                <a href="#contact" class="hover:text-purple-600 transition">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="tel:2313408311" class="hidden sm:flex items-center space-x-2 text-sm font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 border border-slate-200 px-4 py-2.5 rounded-xl transition">
+                    <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    <span>231-340-8311</span>
+                </a>
+                <a href="#contact" class="bg-purple-600 hover:bg-purple-700 text-white px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wider transition shadow-md">
+                    Request Repair
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative pt-12 pb-20 lg:pt-24 lg:pb-32 overflow-hidden bg-white border-b border-slate-200">
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(#7c3aed_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Column -->
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="inline-flex items-center space-x-2 bg-purple-50 border border-purple-200 px-3.5 py-1.5 rounded-full">
+                        <span class="w-2 h-2 rounded-full bg-purple-600 animate-pulse"></span>
+                        <span class="text-xs font-semibold uppercase tracking-widest text-purple-700">Boyne City, Michigan • Local & Trusted</span>
+                    </div>
+                    <div class="space-y-4">
+                        <h1 class="font-display font-black text-5xl sm:text-7xl lg:text-8xl tracking-tight leading-none text-slate-900">
+                            SMALL ENGINES.<br>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-purple-600 to-indigo-600">BIG PERFORMANCE.</span><br>
+                            BUILT TO LAST.
+                        </h1>
+                        <p class="text-lg sm:text-xl text-slate-600 max-w-2xl font-normal leading-relaxed">
+                            Professional Small Engine Repair in Boyne City, MI. When your small engine stops performing, you need dependable repair from someone who understands the machine—not another complicated process.
+                        </p>
+                        <p class="text-base text-slate-700 font-medium">
+                            Liam Howard, Owner / Technician, provides hands-on small engine repair with a focus on honest service, careful diagnostics, and getting your equipment back to work.
+                        </p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 pt-2">
+                        <a href="#contact" class="bg-purple-600 hover:bg-purple-700 text-white font-bold px-8 py-4 rounded-xl text-center uppercase tracking-wider text-sm transition glow-purple flex items-center justify-center space-x-2">
+                            <span>Request Repair</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                        <a href="tel:2313408311" class="bg-slate-100 hover:bg-slate-200 border border-slate-200 text-slate-800 font-bold px-8 py-4 rounded-xl text-center uppercase tracking-wider text-sm transition flex items-center justify-center space-x-2">
+                            <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <span>Call 231-340-8311</span>
+                        </a>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200 flex items-center space-x-6 text-sm text-slate-600">
+                        <div><strong class="text-slate-900 block font-display text-lg">Liam Howard</strong>Owner / Technician</div>
+                        <div class="h-8 w-px bg-slate-200"></div>
+                        <div><strong class="text-slate-900 block font-display text-lg">Boyne City, MI</strong>Boyne City, Michigan</div>
+                    </div>
+                </div>
+                <!-- Right Column: Dramatic Engine Hero Image -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-purple-200 bg-white shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80" alt="Liam Howard working on small engine" class="w-full h-[450px] sm:h-[520px] object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x650/7c3aed/ffffff?text=Precision+Small+Engine+Repair'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-purple-900/60 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-white/95 backdrop-blur-md border border-slate-200 shadow-lg">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 rounded-xl bg-purple-100 border border-purple-200 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-display font-bold text-xl text-slate-900">PRACTICAL, HONEST SERVICE</h3>
+                                    <p class="text-xs text-slate-600">Directly with Liam Howard — No middleman, no runaround.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-purple-900 text-white py-10 border-b border-purple-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left items-center">
+                <div class="flex items-center justify-center md:justify-start space-x-4">
+                    <div class="w-10 h-10 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center text-purple-200 font-display font-bold text-lg">01</div>
+                    <div>
+                        <h4 class="font-display font-bold text-lg text-white">LOCAL SERVICE.</h4>
+                        <p class="text-xs text-purple-200">Boyne City & surrounding area</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center md:justify-start space-x-4 md:border-x md:border-purple-800 md:px-6">
+                    <div class="w-10 h-10 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center text-purple-200 font-display font-bold text-lg">02</div>
+                    <div>
+                        <h4 class="font-display font-bold text-lg text-white">HANDS-ON EXPERTISE.</h4>
+                        <p class="text-xs text-purple-200">Owner & Technician: Liam Howard</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center md:justify-start space-x-4 md:pl-6">
+                    <div class="w-10 h-10 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center text-purple-200 font-display font-bold text-lg">03</div>
+                    <div>
+                        <h4 class="font-display font-bold text-lg text-white">BUILT AROUND YOUR EQUIPMENT.</h4>
+                        <p class="text-xs text-purple-200">Specialty: Small Engine Repair</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-xs font-semibold text-purple-600 uppercase tracking-widest block">Direct & Dependable</span>
+                    <h2 class="font-display font-black text-4xl sm:text-5xl text-slate-900 tracking-wide">
+                        YOUR ENGINE HAS A JOB TO DO. <br><span class="text-purple-600">LET’S GET IT RUNNING RIGHT.</span>
+                    </h2>
+                    <p class="text-slate-700 leading-relaxed text-base sm:text-lg">
+                        Small engines work hard. When performance drops, starting becomes difficult, or something simply doesn't sound right, the problem shouldn't be ignored.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        At Howard’s Small Engine Repair, Liam takes a practical, hands-on approach to diagnosing and repairing small engine problems.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        From troubleshooting an engine that won't start to getting equipment ready for another season, the goal is simple:
+                    </p>
+                    <div class="grid grid-cols-3 gap-4 pt-2">
+                        <div class="bg-purple-50 p-4 rounded-xl border border-purple-200 text-center">
+                            <span class="block font-display font-bold text-lg text-purple-700">01</span>
+                            <span class="text-xs font-semibold text-purple-900 uppercase tracking-wide">Diagnose it.</span>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-xl border border-purple-200 text-center">
+                            <span class="block font-display font-bold text-lg text-purple-700">02</span>
+                            <span class="text-xs font-semibold text-purple-900 uppercase tracking-wide">Repair it.</span>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-xl border border-purple-200 text-center">
+                            <span class="block font-display font-bold text-lg text-purple-700">03</span>
+                            <span class="text-xs font-semibold text-purple-900 uppercase tracking-wide">Get running.</span>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <a href="#contact" class="inline-flex items-center space-x-2 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-xl font-bold uppercase tracking-wider text-sm transition shadow-md">
+                            <span>TALK TO LIAM</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-purple-50 p-8 sm:p-10 rounded-3xl border border-purple-200 relative shadow-lg">
+                    <div class="absolute -top-4 -right-4 w-24 h-24 bg-purple-200/50 rounded-full blur-xl pointer-events-none"></div>
+                    <h3 class="font-display font-bold text-2xl text-purple-950 mb-4">SMALL ENGINE REPAIR WITHOUT THE RUNAROUND.</h3>
+                    <p class="text-slate-700 text-sm leading-relaxed mb-6">
+                        When you contact Howard’s, you're dealing directly with Liam Howard, Owner / Technician. That means clear communication, honest assessments, and attention to detail.
+                    </p>
+                    <div class="p-4 bg-white rounded-2xl border border-purple-100 flex items-center space-x-4">
+                        <div class="w-10 h-10 rounded-xl bg-purple-600 text-white flex items-center justify-center font-bold">LH</div>
+                        <div>
+                            <span class="block font-display font-bold text-slate-900">Direct Technician Access</span>
+                            <span class="text-xs text-slate-600">No dispatchers or runaround. Talk to Liam directly.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-purple-50/50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-semibold text-purple-700 uppercase tracking-widest block">Comprehensive Care</span>
+                <h2 class="font-display font-black text-4xl sm:text-6xl text-slate-900 tracking-wide">
+                    OUR CORE <span class="text-purple-600">SERVICES</span>
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    From unexpected engine failure to seasonal prep, get dedicated mechanical work designed to last.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white hover:bg-slate-50 border border-purple-100 p-8 rounded-3xl transition duration-300 flex flex-col justify-between group shadow-sm hover:shadow-md">
+                    <div class="space-y-6">
+                        <div class="w-14 h-14 rounded-2xl bg-purple-100 border border-purple-200 flex items-center justify-center text-purple-700 group-hover:bg-purple-600 group-hover:text-white transition duration-300">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-2xl text-slate-900 mb-2">DIAGNOSTICS & TROUBLESHOOTING</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                                Not sure what's wrong? We can start with the problem and work toward the cause.
+                            </p>
+                            <p class="text-slate-500 text-xs leading-relaxed mb-3">
+                                Engine won't start? Running poorly? Losing power? Strange noises?
+                            </p>
+                            <p class="text-slate-700 text-xs font-semibold">
+                                A proper diagnosis helps determine the right next step.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100">
+                        <span class="text-xs font-bold text-purple-700 tracking-wider uppercase">Precision Analysis</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white hover:bg-slate-50 border border-purple-100 p-8 rounded-3xl transition duration-300 flex flex-col justify-between group shadow-sm hover:shadow-md">
+                    <div class="space-y-6">
+                        <div class="w-14 h-14 rounded-2xl bg-purple-100 border border-purple-200 flex items-center justify-center text-purple-700 group-hover:bg-purple-600 group-hover:text-white transition duration-300">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-2xl text-slate-900 mb-2">REPAIR & SERVICE</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                                Small engine problems can range from minor issues to more involved repairs.
+                            </p>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Howard’s Small Engine Repair provides hands-on service focused on restoring dependable operation and performance.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100">
+                        <span class="text-xs font-bold text-purple-700 tracking-wider uppercase">Hands-On Care</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white hover:bg-slate-50 border border-purple-100 p-8 rounded-3xl transition duration-300 flex flex-col justify-between group shadow-sm hover:shadow-md">
+                    <div class="space-y-6">
+                        <div class="w-14 h-14 rounded-2xl bg-purple-100 border border-purple-200 flex items-center justify-center text-purple-700 group-hover:bg-purple-600 group-hover:text-white transition duration-300">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-2xl text-slate-900 mb-2">MAINTENANCE & TUNE-UPS</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                                Regular maintenance can help keep your equipment performing properly and ready when you need it.
+                            </p>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Keep your small engine maintained instead of waiting for a breakdown.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100">
+                        <span class="text-xs font-bold text-purple-700 tracking-wider uppercase">Reliable Upkeep</span>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white hover:bg-slate-50 border border-purple-100 p-8 rounded-3xl transition duration-300 flex flex-col justify-between group shadow-sm hover:shadow-md">
+                    <div class="space-y-6">
+                        <div class="w-14 h-14 rounded-2xl bg-purple-100 border border-purple-200 flex items-center justify-center text-purple-700 group-hover:bg-purple-600 group-hover:text-white transition duration-300">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-2xl text-slate-900 mb-2">SEASONAL SERVICE</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                                Equipment often sits for months before it's needed again.
+                            </p>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Seasonal attention can help identify problems early and get your equipment prepared for the work ahead.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100">
+                        <span class="text-xs font-bold text-purple-700 tracking-wider uppercase">Season-Ready</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-howards" class="py-24 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-8">
+                    <div class="space-y-4">
+                        <span class="text-xs font-semibold text-purple-600 uppercase tracking-widest block">WHY HOWARD’S?</span>
+                        <h2 class="font-display font-black text-4xl sm:text-6xl text-slate-900 tracking-wide">
+                            SMALL ENGINES. <br><span class="text-purple-600">SERIOUS ATTENTION.</span>
+                        </h2>
+                        <p class="text-slate-700 text-lg leading-relaxed">
+                            A small engine may power equipment you depend on every day. That's why repair shouldn't feel like a guessing game. Howard’s Small Engine Repair brings personal, hands-on service to Boyne City and the surrounding area—with Liam directly involved in the work.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="bg-purple-50/60 p-6 rounded-2xl border border-purple-200">
+                            <h3 class="font-display font-bold text-xl text-slate-900 mb-2 text-purple-700">OWNER-OPERATED SERVICE</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed mb-2">When you contact Howard’s, you're dealing directly with Liam Howard, Owner / Technician.</p>
+                            <p class="text-xs text-slate-500">That means a straightforward experience without layers of unnecessary communication.</p>
+                        </div>
+                        <div class="bg-purple-50/60 p-6 rounded-2xl border border-purple-200">
+                            <h3 class="font-display font-bold text-xl text-slate-900 mb-2 text-purple-700">HANDS-ON APPROACH</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed mb-2">Every engine has its own symptoms and challenges.</p>
+                            <p class="text-xs text-slate-500">The focus is on understanding the problem, identifying the cause, and determining the appropriate repair.</p>
+                        </div>
+                        <div class="bg-purple-50/60 p-6 rounded-2xl border border-purple-200">
+                            <h3 class="font-display font-bold text-xl text-slate-900 mb-2 text-purple-700">HONEST, PRACTICAL SERVICE</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed mb-2">Good repair starts with good communication.</p>
+                            <p class="text-xs text-slate-500">You'll get a straightforward conversation about what's going on with your equipment and what needs to happen next.</p>
+                        </div>
+                        <div class="bg-purple-50/60 p-6 rounded-2xl border border-purple-200">
+                            <h3 class="font-display font-bold text-xl text-slate-900 mb-2 text-purple-700">BUILT AROUND PERFORMANCE</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed mb-2">The goal isn't simply to make an engine start.</p>
+                            <p class="text-xs text-slate-500">It's to help get your equipment back to dependable operation and ready to do its job.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-3xl overflow-hidden border border-purple-200 bg-white p-3 shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Workshop equipment" class="w-full h-[500px] object-cover rounded-2xl opacity-95" onerror="this.src='https://placehold.co/650x700/7c3aed/ffffff?text=Liam+Howard+-+Workshop'">
+                        <div class="absolute inset-x-8 bottom-8 bg-white/95 backdrop-blur-md p-6 rounded-2xl border border-slate-200 flex items-center justify-between shadow-lg">
+                            <div>
+                                <span class="font-display font-bold text-xl text-slate-900 block">THE HOWARD’S DIFFERENCE</span>
+                                <span class="text-xs text-purple-700 font-semibold">Liam Howard — Owner / Technician</span>
+                            </div>
+                            <a href="#contact" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2.5 rounded-xl font-bold text-xs uppercase transition shadow-md">
+                                REQUEST SERVICE
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="py-24 bg-purple-50/40 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-semibold text-purple-700 uppercase tracking-widest block">Simple Process</span>
+                <h2 class="font-display font-black text-4xl sm:text-6xl text-slate-900 tracking-wide">
+                    HOW <span class="text-purple-600">IT WORKS</span>
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    Getting your equipment serviced shouldn't be complicated. Here is what to expect.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Step 1 -->
+                <div class="bg-white border border-purple-100 p-8 rounded-3xl relative shadow-sm">
+                    <span class="font-display font-black text-5xl text-purple-200 absolute top-6 right-6">01</span>
+                    <h3 class="font-display font-bold text-xl text-slate-900 mb-3 pt-4">TELL US WHAT'S WRONG</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Contact Howard’s and explain what's happening with your engine or equipment.
+                    </p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-white border border-purple-100 p-8 rounded-3xl relative shadow-sm">
+                    <span class="font-display font-black text-5xl text-purple-200 absolute top-6 right-6">02</span>
+                    <h3 class="font-display font-bold text-xl text-slate-900 mb-3 pt-4">DIAGNOSE THE PROBLEM</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        The issue is evaluated to determine what may be causing the problem.
+                    </p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-white border border-purple-100 p-8 rounded-3xl relative shadow-sm">
+                    <span class="font-display font-black text-5xl text-purple-200 absolute top-6 right-6">03</span>
+                    <h3 class="font-display font-bold text-xl text-slate-900 mb-3 pt-4">DISCUSS THE REPAIR</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        We'll discuss the appropriate next step based on the condition of the equipment.
+                    </p>
+                </div>
+                <!-- Step 4 -->
+                <div class="bg-white border border-purple-100 p-8 rounded-3xl relative shadow-sm">
+                    <span class="font-display font-black text-5xl text-purple-200 absolute top-6 right-6">04</span>
+                    <h3 class="font-display font-bold text-xl text-slate-900 mb-3 pt-4">GET BACK TO WORK</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        The goal is simple: get your equipment operating properly again.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-semibold text-purple-700 uppercase tracking-widest block">CONTACT</span>
+                <h2 class="font-display font-black text-4xl sm:text-6xl text-slate-900 tracking-wide">
+                    LET'S GET YOUR ENGINE <span class="text-purple-600">RUNNING RIGHT.</span>
+                </h2>
+                <p class="text-slate-600 text-base sm:text-lg">
+                    Have a repair question or need service? Send a message or call directly. Tell us what's happening with your equipment and we'll take it from there.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <!-- Left Info -->
+                <div class="lg:col-span-5 space-y-8 bg-purple-50/60 p-8 sm:p-10 rounded-3xl border border-purple-200">
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-100 border border-purple-200 flex items-center justify-center text-purple-700 flex-shrink-0">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-500 uppercase tracking-wider block font-bold">PHONE</span>
+                                <a href="tel:2313408311" class="font-display font-bold text-2xl text-slate-900 hover:text-purple-700 transition">231-340-8311</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-100 border border-purple-200 flex items-center justify-center text-purple-700 flex-shrink-0">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-500 uppercase tracking-wider block font-bold">EMAIL</span>
+                                <a href="mailto:liamhoward217@gmail.com" class="font-semibold text-lg text-slate-900 hover:text-purple-700 transition">liamhoward217@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-100 border border-purple-200 flex items-center justify-center text-purple-700 flex-shrink-0">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-500 uppercase tracking-wider block font-bold">LOCATION</span>
+                                <span class="font-semibold text-lg text-slate-900 block">Boyne City, MI</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-100 border border-purple-200 flex items-center justify-center text-purple-700 flex-shrink-0">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-500 uppercase tracking-wider block font-bold">INSTAGRAM</span>
+                                <a href="https://instagram.com/howardliam007" target="_blank" class="font-semibold text-lg text-slate-900 hover:text-purple-700 transition">@howardliam007</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white p-8 sm:p-10 rounded-3xl border border-purple-200 shadow-xl relative">
+                        <div class="absolute -top-6 -right-6 w-32 h-32 bg-purple-100 rounded-full blur-2xl pointer-events-none"></div>
+                        <h3 class="font-display font-bold text-2xl sm:text-3xl text-slate-900 mb-6">SERVICE REQUEST FORM</h3>
+                        
+                        <form id="serviceForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold uppercase tracking-wider text-slate-700">Name</label>
+                                    <input type="text" id="userName" required placeholder="Your Name" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3.5 text-slate-900 placeholder-slate-400 focus:outline-none focus:border-purple-600 transition">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-xs font-bold uppercase tracking-wider text-slate-700">Phone</label>
+                                    <input type="tel" id="userPhone" required placeholder="Your Phone" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3.5 text-slate-900 placeholder-slate-400 focus:outline-none focus:border-purple-600 transition">
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase tracking-wider text-slate-700">Email</label>
+                                <input type="email" id="userEmail" required placeholder="Your Email" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3.5 text-slate-900 placeholder-slate-400 focus:outline-none focus:border-purple-600 transition">
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase tracking-wider text-slate-700">What are you having trouble with?</label>
+                                <textarea id="userMessage" rows="4" required placeholder="Tell us about the problem" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3.5 text-slate-900 placeholder-slate-400 focus:outline-none focus:border-purple-600 transition resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 rounded-xl uppercase tracking-wider text-sm transition glow-purple flex items-center justify-center space-x-2 shadow-md">
+                                <span>REQUEST SERVICE</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                            </button>
+                        </form>
+
+                        <!-- Success message box replacing alert() -->
+                        <div id="formSuccessMessage" class="hidden mt-6 p-6 rounded-2xl bg-purple-50 border border-purple-300 text-center space-y-2 shadow-inner">
+                            <h4 class="font-display font-bold text-xl text-purple-950">Request Received!</h4>
+                            <p class="text-xs text-purple-800">Thanks for reaching out, <span id="displayName" class="font-bold"></span>. Liam Howard will review your service request and get in touch with you shortly at <span id="displayPhone" class="font-bold"></span>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900 text-white text-center border-b border-purple-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <span class="text-xs font-semibold text-purple-200 uppercase tracking-widest block">FINAL CTA</span>
+            <h2 class="font-display font-black text-4xl sm:text-7xl tracking-wide">
+                YOUR EQUIPMENT WORKS HARD.<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-200 to-white">KEEP IT RUNNING THAT WAY.</span>
+            </h2>
+            <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 max-w-2xl mx-auto space-y-2">
+                <span class="font-display font-bold text-xl text-white block">HOWARD’S SMALL ENGINE REPAIR</span>
+                <p class="text-sm text-purple-100">Professional small engine repair from Liam Howard, Owner / Technician, in Boyne City, Michigan.</p>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
+                <a href="tel:2313408311" class="w-full sm:w-auto bg-white hover:bg-purple-50 text-purple-950 font-bold px-8 py-4 rounded-xl uppercase tracking-wider text-sm transition shadow-lg flex items-center justify-center space-x-2">
+                    <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    <span>CALL 231-340-8311</span>
+                </a>
+                <a href="#contact" class="w-full sm:w-auto bg-purple-700 hover:bg-purple-600 text-white border border-purple-500 font-bold px-8 py-4 rounded-xl uppercase tracking-wider text-sm transition">
+                    REQUEST REPAIR
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white py-12 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+            <div class="text-center md:text-left space-y-1">
+                <span class="font-display font-extrabold text-xl tracking-wider text-slate-900 block">HOWARD’S SMALL ENGINE REPAIR</span>
+                <p class="text-xs text-slate-600">Small Engines. Big Performance. Built to Last. • Boyne City, MI</p>
+            </div>
+            <div class="flex items-center space-x-6 text-sm font-medium text-slate-600">
+                <a href="#services" class="hover:text-purple-600 transition">Services</a>
+                <a href="#why-howards" class="hover:text-purple-600 transition">About</a>
+                <a href="#contact" class="hover:text-purple-600 transition">Contact</a>
+                <a href="https://instagram.com/howardliam007" target="_blank" class="hover:text-purple-600 transition">Instagram</a>
+            </div>
+            <div class="text-center md:text-right text-xs text-slate-500">
+                <p>&copy; 2026 Howard’s Small Engine Repair. All Rights Reserved.</p>
+                <p class="text-purple-600 font-bold mt-1">Liam Howard — Owner / Technician</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('userName').value;
+            const phone = document.getElementById('userPhone').value;
+            
+            document.getElementById('displayName').textContent = name;
+            document.getElementById('displayPhone').textContent = phone;
+            
+            document.getElementById('serviceForm').reset();
+            const successBox = document.getElementById('formSuccessMessage');
+            successBox.classList.remove('hidden');
+            successBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    </script>
+</body>
+</html>
